@@ -9,5 +9,10 @@ import com.bigbox.b2csite.order.model.entity.OrderItemEntity;
 
 
 public class OrderEntityToOrderSummaryTransformer {
+	
+	public OrderSummary transform(OrderEntity orderEntity) {
+		
+		return null;
+	}
 
 }

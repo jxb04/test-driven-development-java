@@ -16,5 +16,18 @@ import com.bigbox.b2csite.order.model.entity.OrderItemEntity;
 
 
 public class OrderEntityToOrderSummaryTransformerTest {
+	
+	private OrderEntityToOrderSummaryTransformer target = null;
+	
+	@Before
+	public void setup() {
+		target = new OrderEntityToOrderSummaryTransformer();
+	}
+	
+	@Test
+	public void test_transform_success() {
+		
+		target.transform(null);
+	}
 
 }
