@@ -12,7 +12,9 @@ public class OrderEntityToOrderSummaryTransformer {
 	
 	public OrderSummary transform(OrderEntity orderEntity) {
 		
-		return null;
+		OrderSummary orderSummaryResult = new OrderSummary();
+		
+		return orderSummaryResult;
 	}
 
 }

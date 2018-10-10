@@ -27,7 +27,9 @@ public class OrderEntityToOrderSummaryTransformerTest {
 	@Test
 	public void test_transform_success() {
 		
-		target.transform(null);
+		OrderSummary result = target.transform(null);
+		
+		Assert.assertNotNull(result);
 	}
 
 }
