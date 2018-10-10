@@ -14,6 +14,8 @@ public class OrderEntityToOrderSummaryTransformer {
 		
 		OrderSummary orderSummaryResult = new OrderSummary();
 		
+		orderSummaryResult.setOrderNumber(orderEntity.getOrderNumber());
+		
 		return orderSummaryResult;
 	}
 

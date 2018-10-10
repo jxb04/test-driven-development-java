@@ -38,5 +38,11 @@ public class OrderEntityToOrderSummaryTransformerTest {
 		
 		Assert.assertEquals(orderNumberFixture, result.getOrderNumber());
 	}
+	
+	@Test
+	@Ignore
+	public void test_transform_inputIsNull() {
+		
+	}
 
 }
