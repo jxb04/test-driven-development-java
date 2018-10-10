@@ -27,9 +27,16 @@ public class OrderEntityToOrderSummaryTransformerTest {
 	@Test
 	public void test_transform_success() {
 		
-		OrderSummary result = target.transform(null);
+		String orderNumberFixture = UUID.randomUUID().toString();
+		
+		OrderEntity orderEntityFixture = new OrderEntity();
+		orderEntityFixture.setOrderNumber(orderNumberFixture);
+		
+		OrderSummary result = target.transform(orderEntityFixture);
 		
 		Assert.assertNotNull(result);
+		
+		Assert.assertEquals(orderNumberFixture, result.getOrderNumber());
 	}
 
 }
