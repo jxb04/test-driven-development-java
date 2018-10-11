@@ -12,7 +12,11 @@ public class OrderEntityToOrderSummaryTransformer {
 	
 	public OrderSummary transform(OrderEntity orderEntity) {
 		
-		return null;
+		OrderSummary orderSummaryResult = new OrderSummary();
+		
+		orderSummaryResult.setOrderNumber(orderEntity.getOrderNumber());
+		
+		return orderSummaryResult;
 	}
 
 }
